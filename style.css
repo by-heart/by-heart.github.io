@@ -238,9 +238,15 @@ td:hover{
     perspective: 1000px;
     margin: 30px;
 }
+#flashcard h3{
+    position: absolute;
+    bottom: 0;
+    right: 43%;
+    font-size: .8rem;
+}
 .front{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     position: absolute;
     width: 100%;
@@ -248,10 +254,19 @@ td:hover{
     background-color: lightgray;
     backface-visibility: hidden;
     text-align: center;
+    gap: 30px;
+}
+.term{
+    padding: 10px;
+    font-size: 2rem;
+}
+.def{
+    padding: 10px;
+    font-size: 1.6rem;
 }
 .back{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     position: absolute;
     width: 100%;
@@ -259,6 +274,7 @@ td:hover{
     background-color: lightgray;
     backface-visibility: hidden;
     text-align: center;
+    gap: 30px;
     transform: rotateY(180deg);
 }
 .flipCard {

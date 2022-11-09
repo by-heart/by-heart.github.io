@@ -41,16 +41,22 @@
       <h1>Your Flashcards</h1>
       <div class="flash_body">
         <div class="leftarrow">
-          <button class="arrow_button">
+          <button class="arrow_button" onclick=" prevCard()">
             <i class="fa-solid fa-caret-left fa-6x"></i>
           </button>
         </div>
         <div id="flashcard">
-          <div class="front"><h3>click to flip</h3></div>
-          <div class="back"><h3>click to flip</h3></div>
+          <div class="front">
+            <div class="term"></div>
+            <h3>click to flip</h3>
+          </div>
+          <div class="back">
+            <div class="def"></div>
+            <h3>click to flip</h3>
+          </div>
         </div>
         <div class="rightarrow">
-          <button class="arrow_button">
+          <button class="arrow_button" onclick="nextCard()">
             <i class="fa-solid fa-caret-right fa-6x"></i>
           </button>
         </div>
@@ -62,7 +68,7 @@
         <p id="timer" />
       </div>
     </div>
-    <script src="assets/js/flashcards.js"></script>
+    <script src="assets/js/flashcards1.js"></script>
     <footer></footer>
   </body>
 </html>
