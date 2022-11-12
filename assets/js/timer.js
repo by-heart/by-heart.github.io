@@ -20,6 +20,7 @@ let countdown = function() {
 	// If the count down is finished, write some text
 	if (now >= countDownDate) {
    	clearInterval(countdown);
+	document.getElementsByClassName("flash_body")[0].style.display = "flex";
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
 }
@@ -35,4 +36,9 @@ function clearClick() {
 function startTimer() {
 	countDownDate = new Date().getTime() + 150000 * Math.pow(2, (timesClicked));
 	setInterval(countdown, 1000);
+	clearInterval(countdown);
+}
+
+function blackout() {
+	document.getElementsByClassName("flash_body")[0].style.display = "none";
 }
