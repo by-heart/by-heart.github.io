@@ -1,5 +1,5 @@
-// Update later to make this so a timer is set for 5/10/appropriate interval
 let countDownDate;
+let timesClicked = 0;
 
 let countdown = function() {
 
@@ -24,7 +24,15 @@ let countdown = function() {
   }
 }
 
+function addClick() {
+	timesClicked = timesClicked + 1;
+}
+
+function clearClick() {
+	timesClicked = 0;
+}
+
 function startTimer() {
-	countDownDate = new Date().getTime() + 300000;
+	countDownDate = new Date().getTime() + 150000 * Math.pow(2, (timesClicked));
 	setInterval(countdown, 1000);
 }
