@@ -50,6 +50,8 @@ function deleteDeck() {
 	back.getElementsByClassName("def")[0].innerHTML = "";
 	contentArray = [];
 	console.log("DELETE!");
+	i = 0;
+	setCard(contentArray[i]);
 
 }
 
