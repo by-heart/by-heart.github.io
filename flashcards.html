@@ -30,7 +30,7 @@
             <button class="main_button medium" onclick="addCard()">
               Add Card
             </button>
-            <button class="main_button medium" onclick="deleteDeck()">
+            <button class="main_button medium" onclick="clearClick(); deleteDeck()">
               Delete Deck
             </button>
           </div>
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="button_row">
-        <button class="main_button large" onclick = "startTimer()">Start/restart timer!</button>
+        <button class="main_button large" onclick = "addClick(); startTimer()">Start/restart timer!</button>
       </div>
       <div class="timer">
         <p id="timer" />
